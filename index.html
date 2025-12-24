@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IoT Project Building Workshop</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0B1020;
+  --panel:#111634;
+  --indigo:#312E81;
+  --neon:#22D3EE;
+  --lav:#A5B4FC;
+  --text:#E5E7EB;
+  --muted:#9CA3AF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:Inter,sans-serif;
+  background:linear-gradient(180deg,#0B1020,#050814);
+  color:var(--text);
+}
+section{padding:90px 20px}
+.center{text-align:center}
+h1,h2,h3{font-family:Sora}
+h1{font-size:clamp(2.4rem,5vw,3.6rem)}
+h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+p{color:var(--muted);max-width:900px;margin:14px auto;line-height:1.7}
+
+/* HERO */
+.hero{
+  min-height:90vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+.badge{
+  display:inline-block;
+  padding:8px 18px;
+  border-radius:999px;
+  background:rgba(34,211,238,.1);
+  color:var(--neon);
+  margin-bottom:20px;
+}
+.cta{
+  display:inline-block;
+  margin-top:40px;
+  padding:15px 44px;
+  border-radius:14px;
+  background:linear-gradient(90deg,var(--indigo),var(--neon));
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  box-shadow:0 0 18px rgba(34,211,238,.45);
+  transition:.3s;
+}
+.cta:hover{
+  transform:translateY(-2px);
+}
+
+/* SCROLL */
+.scroll{
+  display:flex;
+  gap:26px;
+  overflow-x:auto;
+  padding-bottom:10px;
+  scroll-snap-type:x mandatory;
+}
+.card{
+  min-width:300px;
+  background:var(--panel);
+  padding:26px;
+  border-radius:20px;
+  border:1px solid transparent;
+  scroll-snap-align:start;
+}
+.card.active{
+  border-color:var(--neon);
+  box-shadow:0 0 18px rgba(34,211,238,.35);
+}
+.card h3{color:var(--lav);margin-bottom:10px}
+
+.divider{
+  width:120px;
+  height:2px;
+  margin:30px auto;
+  background:linear-gradient(90deg,var(--indigo),var(--neon));
+}
+
+footer{
+  padding:40px;
+  text-align:center;
+  color:var(--muted);
+  font-size:.85rem;
+}
+.social span{
+  margin:0 10px;
+  color:var(--neon);
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <div>
+    <div class="badge">Technical Workshop</div>
+    <h1>IoT Project Building Workshop</h1>
+    <p><b>Build. Innovate. Connect the Future.</b></p>
+    <p>
+      A hands-on workshop focused on basic IoT project development.
+      Participants receive a complete IoT project kit along with
+      step-by-step mentor guidance. The workshop emphasizes practical
+      learning using sensors, microcontrollers, and real-time data.
+    </p>
+    <a href="register.html" class="cta">Register Now</a>
+  </div>
+</section>
+
+<section>
+  <h2 class="center">Workshop Highlights</h2>
+  <div class="divider"></div>
+  <div class="scroll">
+    <div class="card active"><h3>IoT Project Kit</h3><p>All required hardware included.</p></div>
+    <div class="card"><h3>Live Demonstrations</h3><p>Real-time mentor demos.</p></div>
+    <div class="card"><h3>Hardware + Coding</h3><p>Practical circuit & code sessions.</p></div>
+    <div class="card"><h3>Beginner Friendly</h3><p>No prior experience needed.</p></div>
+    <div class="card"><h3>Certification</h3><p>Certificate of participation.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2 class="center">IoT Projects You Will Build</h2>
+  <div class="divider"></div>
+  <div class="scroll">
+    <div class="card active">
+      <h3>Smart Home Automation</h3>
+      <p><b>Purpose:</b> Remote appliance control</p>
+      <p><b>Components:</b> ESP32, Relay</p>
+      <p><b>Application:</b> Smart homes</p>
+    </div>
+    <div class="card">
+      <h3>Smart Street Light</h3>
+      <p><b>Purpose:</b> Automatic lighting</p>
+      <p><b>Components:</b> LDR, PIR</p>
+      <p><b>Application:</b> Smart cities</p>
+    </div>
+    <div class="card">
+      <h3>Temperature & Humidity Monitoring</h3>
+      <p><b>Purpose:</b> Environmental tracking</p>
+      <p><b>Components:</b> DHT11</p>
+      <p><b>Application:</b> Labs & farms</p>
+    </div>
+    <div class="card">
+      <h3>Smart Irrigation</h3>
+      <p><b>Purpose:</b> Automated watering</p>
+      <p><b>Components:</b> Soil sensor</p>
+      <p><b>Application:</b> Agriculture</p>
+    </div>
+    <div class="card">
+      <h3>Gas Leakage Detection</h3>
+      <p><b>Purpose:</b> Gas leak alerts</p>
+      <p><b>Components:</b> MQ sensor</p>
+      <p><b>Application:</b> Safety systems</p>
+    </div>
+    <div class="card">
+      <h3>IoT Attendance System</h3>
+      <p><b>Purpose:</b> Digital attendance</p>
+      <p><b>Components:</b> RFID, ESP32</p>
+      <p><b>Application:</b> Colleges & offices</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="social">
+    <span>Instagram</span>
+    <span>LinkedIn</span>
+    <span>Twitter</span>
+  </div><br>
+  © 2025 IoT Project Building Workshop
+</footer>
+
+</body>
+</html>
